@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry's Fitness</title>
+</head>
+<style>
+body {
+    font-family: 'Square Peg', cursive;
+    font-weight:lighter;
+    background-image: url(./img/gym_boy.jpg);
+    background-size:cover;   
+    background-repeat: no-repeat;
+    color: white; 
+    height: 200%;
+    width: 100%;
+}
+.left{
+    display: inline-block;
+    /* border: 2px solid rgb(246, 245, 244); */
+    position: absolute;
+    top: 20px;
+    left: 30px;
+   
+}
+.left img{
+    width: 40px;
+    padding: 0px 20px 0px 30px;
+    margin-bottom: 0px;
+}
+.center{
+    display: block;
+    width:  50%;
+    margin: 20px auto;
+    /* border: 2px solid rgb(246, 245, 244); */
+    /* font-size: 30px; */
+}
+.right{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: inline-block;
+    /* border: 2px solid rgb(246, 245, 244); */
+    font-size: 10px;
+   padding: 10px;
+}
+.navbar{
+    display: inline-block;
+}
+.navbar li{
+    display: inline-block;
+    font-size: 20px;
+    padding: 1px 20px;
+}
+.navbar li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 10px;
+    font-size: 13px;
+}
+.navbar li a:hover{
+    color: rgb(220, 138, 138);
+    border: 2px solid white;
+    border-radius: 20px;
+
+}
+.btn{
+    margin: 0px 10px;
+    background-color: transparent;
+    color: white;
+    font-size: 10px;
+    padding: 5px 15px;
+    border: 2px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Square Peg', cursive;
+    font-weight: bold;
+}
+.btn:hover{   
+     color: rgb(220, 138, 138);
+}
+.container{
+    border: 2px solid greenyellow;
+    margin: 80px 20px;
+    margin-left: 70px;
+    padding: 5px 10px 5px 10px;
+    padding-left: 30px;
+    width: 30%;
+    border-radius: 10px;
+    font-size: 10px;
+    background-color: #0e18218c;
+}
+.form-group{
+    font-size: 15px;
+}
+.form-group input{
+    margin: 10px 0px;
+    width: 90%;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    /* border-bottom-color: white ; */
+    border-width: 1px;
+    /* font-size: 10px; */
+    background: transparent;
+    color: aliceblue;
+}
+.form-group input::placeholder{
+    color: rgb(199, 241, 241);
+}
+.container .btn{
+    margin: 10px 5px;
+    width: 90%;
+    font-size: 15px;
+    padding: 2px ;
+}
+
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="https://media.istockphoto.com/vectors/skull-and-knife-symbol-army-sign-vector-illustration-vector-id1058106214?s=612x612" alt="">
+            <div style="font-size: 15px; text-align: center; line-height: 20px;">Harry's Fitness</div>
+        </div>
+        <!-- mid for navbar -->
+        <div class="center">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right for buttons -->
+        <div class="right">
+            <button class="btn">Call Now</button>
+            <button class="btn">Email</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym in Jaipur now!</h1>
+        <form action="noaction.php">
+            <div class="form-group">Name:
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">E-mail:
+                <input type="email" name="" placeholder="Enter your e-mail">
+            </div>
+            <div class="form-group">Mobile:
+                <input type="number" name="" placeholder="Enter your mobile">
+            </div>
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
